@@ -6,6 +6,69 @@
     <title>About me</title>
 </head>
 <body>
-    
+    <header>
+        <h1>My Portfolio</h1>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#AboutMe">About me</a></li>
+                <li><a href="#Skills">My skills</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="AboutMe" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Me</h2>
+            <p>Hello, I'm a web developer!</p>
+            <img src="https://avatars.githubusercontent.com/krwg?size=200" 
+            alt="GitHub avatar of krwg" 
+            width="200" 
+            height="200">
+        </section>
+
+        <article aria-labelledby="why-web-heading">
+            <h2 id="why-web-heading">Why I'm Learning Web Development</h2>
+            <p>I'm passionate about creating interactive experiences and solving real-world problems through code. Web development allows me to build products that people use every day.</p>
+            <time datetime="2026-07-08">Published: July 8, 2026</time>
+        </article>
+
+        <aside aria-labelledby="currently-studying-heading">
+            <h2 id="currently-studying-heading">Currently Studying</h2>
+            <ul>
+                <li>HTML5 semantics</li>
+                <li>Git version control</li>
+                <li>CSS Grid & Flexbox</li>
+            </ul>
+        </aside>
+
+        <section id="Skills" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">My Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>SQL</li>
+                <li>Git and <a href="https://github.com/krwg" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li>Electron</li>
+                <li>Express.js</li>
+                <li>Docker</li>
+            </ul>
+        </section>
+
+        <section id="Contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact</h2>
+            <address>
+                <p>You can message me at: <a href="mailto:getfloke@icloud.com">getfloke@icloud.com</a></p>
+            </address>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Website - About me</p>
+    </footer>
 </body>
 </html>
