@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+                <li><a href="about.html#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Gallery" aria-labelledby="gallery-heading">
+            <h2 id="gallery-heading">My Gallery</h2>
+            
+            <figure>
+                <img src="https://picsum.photos/600/400?random=1" 
+                     alt="Placeholder image 1" 
+                     loading="lazy" 
+                     width="600" 
+                     height="400">
+                <figcaption>Image 1</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://picsum.photos/600/400?random=2" 
+                     alt="Placeholder image 2" 
+                     loading="lazy" 
+                     width="600" 
+                     height="400">
+                <figcaption>Image 2</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://picsum.photos/600/400?random=3" 
+                     alt="Placeholder image 3" 
+                     loading="lazy" 
+                     width="600" 
+                     height="400">
+                <figcaption>Image 3</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://picsum.photos/600/400?random=4" 
+                     alt="Placeholder image 4" 
+                     loading="lazy" 
+                     width="600" 
+                     height="400">
+                <figcaption>Image 4</figcaption>
+            </figure>
+        </section>
+
+        <section id="Video" aria-labelledby="video-heading">
+            <h2 id="video-heading">About Me Video</h2>
+            <video controls 
+                   poster="https://picsum.photos/800/450?random=5" 
+                   width="640" 
+                   height="360"
+                   preload="metadata">
+                <source src="https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4">
+                <p>Your browser does not support HTML5 video. <a href="https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4">Download the video</a>.</p>
+            </video>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Website - Gallery</p>
+    </footer>
+</body>
+</html>
