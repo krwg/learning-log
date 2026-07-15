@@ -6,6 +6,8 @@
     <title>Register</title>
 </head>
 <body>
+    <a href="#main-content">Skip to main content</a>
+
     <header>
         <h1>My Portfolio</h1>
         <nav aria-label="Main navigation">
@@ -19,10 +21,9 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main-content">
         <section id="Registration" aria-labelledby="register-heading">
             <h2 id="register-heading">Register</h2>
-            <p>Create your account. All fields are validated by the browser before submission.</p>
 
             <form action="#" method="post" onsubmit="return false;">
                 <fieldset>
@@ -30,27 +31,23 @@
 
                     <p>
                         <label for="fullname">Full Name</label><br>
-                        <input type="text" id="fullname" name="fullname" required 
-                               placeholder="John Doe" autocomplete="name">
+                        <input type="text" id="fullname" name="fullname" required placeholder="John Doe" autocomplete="name">
                     </p>
 
                     <p>
                         <label for="reg-email">Email</label><br>
-                        <input type="email" id="reg-email" name="email" required 
-                               placeholder="you@example.com" autocomplete="email">
+                        <input type="email" id="reg-email" name="email" required placeholder="you@example.com" autocomplete="email">
                     </p>
 
                     <p>
                         <label for="city">City</label><br>
-                        <input type="text" id="city" name="city" list="cities" 
-                               placeholder="Start typing or choose from list" autocomplete="address-level2">
+                        <input type="text" id="city" name="city" list="cities" placeholder="Start typing or choose" autocomplete="address-level2">
                         <datalist id="cities">
                             <option value="New York">
                             <option value="London">
                             <option value="Tokyo">
                             <option value="Berlin">
                             <option value="Sydney">
-                            <option value="Toronto">
                         </datalist>
                     </p>
                 </fieldset>
@@ -60,27 +57,12 @@
 
                     <p>
                         <label for="username">Username</label><br>
-                        <input type="text" id="username" name="username" required 
-                               pattern="[A-Za-z0-9_]{3,20}" 
-                               title="Username must be 3-20 characters: letters, numbers, or underscore"
-                               placeholder="john_doe123"
-                               autocomplete="username">
+                        <input type="text" id="username" name="username" required pattern="[A-Za-z0-9_]{3,20}" title="3-20 characters: letters, numbers, or underscore" placeholder="john_doe123" autocomplete="username">
                     </p>
 
                     <p>
                         <label for="password">Password</label><br>
-                        <input type="password" id="password" name="password" required 
-                               minlength="8" 
-                               placeholder="At least 8 characters"
-                               autocomplete="new-password">
-                    </p>
-
-                    <p>
-                        <label for="confirm-password">Confirm Password</label><br>
-                        <input type="password" id="confirm-password" name="confirm-password" required 
-                               minlength="8" 
-                               placeholder="Re-enter your password"
-                               autocomplete="new-password">
+                        <input type="password" id="password" name="password" required minlength="8" placeholder="At least 8 characters" autocomplete="new-password">
                     </p>
                 </fieldset>
 
@@ -93,7 +75,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 My Website - Register</p>
+        <p>&copy; 2026 My Website</p>
     </footer>
 </body>
 </html>

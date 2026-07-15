@@ -6,6 +6,8 @@
     <title>Contact</title>
 </head>
 <body>
+    <a href="#main-content">Skip to main content</a>
+
     <header>
         <h1>My Portfolio</h1>
         <nav aria-label="Main navigation">
@@ -19,10 +21,10 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main-content">
         <section id="ContactForm" aria-labelledby="contact-heading">
             <h2 id="contact-heading">Contact Me</h2>
-            <p>Fill out the form below. On a static site you can inspect the payload in DevTools → Network after submit.</p>
+            <p>Fill out the form below.</p>
 
             <form action="#" method="post" onsubmit="return false;">
                 <p>
@@ -42,7 +44,6 @@
                         <option value="general">General question</option>
                         <option value="collaboration">Collaboration</option>
                         <option value="feedback">Feedback</option>
-                        <option value="other">Other</option>
                     </select>
                 </p>
 
@@ -61,10 +62,6 @@
                         <input type="radio" id="contact-phone" name="contact-method" value="phone">
                         <label for="contact-phone">Phone</label>
                     </p>
-                    <p>
-                        <input type="radio" id="contact-telegram" name="contact-method" value="telegram">
-                        <label for="contact-telegram">Telegram</label>
-                    </p>
                 </fieldset>
 
                 <p>
@@ -81,7 +78,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 My Website - Contact</p>
+        <p>&copy; 2026 My Website</p>
     </footer>
 </body>
 </html>
